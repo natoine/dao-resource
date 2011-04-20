@@ -1,6 +1,6 @@
 /*
  * Copyright 2010 Antoine Seilles (Natoine)
- *   This file is part of controler-resource.
+ *   This file is part of dao-resource.
 
     controler-resource is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as published by
