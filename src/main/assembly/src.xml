@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+  <id>distribution</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib/</outputDirectory>
+      <unpack>false</unpack>
+      <scope>runtime</scope>
+    </dependencySet>
+  </dependencySets>
+  <files>
+    <file>
+      <source>src/assemble/conf</source>
+      <outputDirectory>/conf</outputDirectory>
+      <filtered>true</filtered>
+    </file>
+  </files>
+</assembly>

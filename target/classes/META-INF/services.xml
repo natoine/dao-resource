@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+<service name="ResourceCreate" scope="application">
+    <description>
+        Service to create a Resource
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.ResourceCreate
+    </parameter>
+</service>
+<service name="ResourceRetrieve" scope="application">
+    <description>
+        Service to retrieve a Resource
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.ResourceRetrieve
+    </parameter>
+</service>
+<service name="UriCreate" scope="application">
+    <description>
+        Service to create a URI
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.UriCreate
+    </parameter>
+</service>
+<service name="UriRetrieve" scope="application">
+    <description>
+        Service to retrieve a URI
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.UriRetrieve
+    </parameter>
+</service>
+<service name="UriStatusCreate" scope="application">
+    <description>
+        Service to create a UriStatus
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.UriStatusCreate
+    </parameter>
+</service>
+<service name="UriStatusRetrieve" scope="application">
+    <description>
+        Service to retrieve a UriStatus
+    </description>
+    <messageReceivers>
+        <messageReceiver 
+            mep="http://www.w3.org/2004/08/wsdl/in-only"
+    class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+            mep="http://www.w3.org/2004/08/wsdl/in-out"
+    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        fr.natoine.controler.resource.UriStatusRetrieve
+    </parameter>
+</service>
+</serviceGroup>

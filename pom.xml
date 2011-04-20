@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.natoine</groupId>
+  <artifactId>dao-resource</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			 <plugin>
+			  <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+<!--               <artifactId>maven-assembly-plugin</artifactId>
+              <configuration>
+                <descriptors>
+                  <descriptor>src/main/assembly/src.xml</descriptor>
+                </descriptors>
+              </configuration> -->
+             </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<!-- <mainClass>mon.package.mainClass</mainClass> -->
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<!-- <plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.2</version>
+			</plugin> -->
+		</plugins>
+	</build>
+	<dependencies>
+	 <dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>4.1</version>
+      		<scope>test</scope>
+    	</dependency>
+	<!-- Natoine dependencies -->
+		<dependency>
+			<groupId>fr.natoine</groupId>
+			<artifactId>model-resource</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>fr.natoine</groupId>
+			<artifactId>string-op</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+			<!-- <scope>test</scope> -->
+		</dependency>
+	</dependencies>
+</project>
