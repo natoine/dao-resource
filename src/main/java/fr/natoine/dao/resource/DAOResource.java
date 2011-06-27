@@ -376,6 +376,28 @@ private EntityManagerFactory emf = null ;
 	
 	/*RetrieveResource*/
 	/**
+	 * Retrieves all the resources in the database
+	 */
+	public List<Resource> retrieveAllResources()
+	{
+		EntityManager em = emf.createEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		try{
+			tx.begin();
+			List<Resource> resources = ((List<Resource>)em.createQuery("from Resource").getResultList());
+			tx.commit();
+			return resources;
+		}
+		catch(Exception e)
+		{
+			tx.rollback();
+			System.out.println("[DAOResource.retrieveAllResources] unable to retrieve Resource"
+					+ " cause : " + e.getMessage());
+			return new ArrayList<Resource>();
+		}
+	}
+	
+	/**
 	 * Retrieves all the Resources in the database with the specified uri.
 	 * @param _uri
 	 * @return a List of Resources that may be empty

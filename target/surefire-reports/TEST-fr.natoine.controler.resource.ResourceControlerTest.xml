@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.739" errors="0" skipped="0" tests="8" name="fr.natoine.controler.resource.ResourceControlerTest">
+<testsuite failures="0" time="0.441" errors="0" skipped="0" tests="8" name="fr.natoine.controler.resource.ResourceControlerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="/media/stockage/workspace_maven_hibernate/dao-resource"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="/tmp/surefirebooter5101579185968037744.jar"/>
+    <property name="surefire.real.class.path" value="/tmp/surefirebooter1726139856468562470.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"/>
-    <property name="os.version" value="2.6.32-30-generic"/>
+    <property name="os.version" value="2.6.32-32-generic"/>
     <property name="user.home" value="/home/natoine"/>
     <property name="user.timezone" value="Europe/Paris"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -57,12 +57,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.117" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateURI"/>
-  <testcase time="0.379" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveURI"/>
+  <testcase time="0.096" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateURI"/>
+  <testcase time="0.21" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveURI"/>
   <testcase time="0.004" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateUriStatus"/>
-  <testcase time="0.015" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveUriStatus"/>
-  <testcase time="0.028" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateUriStatusChild"/>
-  <testcase time="0.092" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateResource"/>
-  <testcase time="0.02" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveResource"/>
-  <testcase time="0.008" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateAndGetResource"/>
+  <testcase time="0.006" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveUriStatus"/>
+  <testcase time="0.014" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateUriStatusChild"/>
+  <testcase time="0.066" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateResource"/>
+  <testcase time="0.017" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testRetrieveResource"/>
+  <testcase time="0.009" classname="fr.natoine.controler.resource.ResourceControlerTest" name="testCreateAndGetResource"/>
 </testsuite>

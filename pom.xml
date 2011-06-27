@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.natoine</groupId>
   <artifactId>dao-resource</artifactId>
+  <name>fr.natoine.dao-resource</name>
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <build>
